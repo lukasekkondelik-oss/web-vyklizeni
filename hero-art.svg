@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 520 220" role="img" aria-label="Vyklízecí dodávka a krabice před domem">
+  <rect width="520" height="220" rx="18" fill="#e3efe9"/>
+  <circle cx="440" cy="52" r="26" fill="#f5a623" opacity=".9"/>
+  <rect x="0" y="176" width="520" height="44" fill="#cfe0d8"/>
+  <!-- dům -->
+  <path d="M40 176V96l70-46 70 46v80z" fill="#fff"/>
+  <path d="M30 100 110 46l80 54" fill="none" stroke="#1f7a5a" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+  <rect x="92" y="126" width="36" height="50" rx="4" fill="#1f7a5a"/>
+  <rect x="55" y="108" width="28" height="24" rx="3" fill="#b9d6ca"/>
+  <rect x="137" y="108" width="28" height="24" rx="3" fill="#b9d6ca"/>
+  <!-- krabice -->
+  <rect x="205" y="146" width="40" height="30" fill="#d9a35b"/><rect x="205" y="146" width="40" height="8" fill="#c58f45"/>
+  <rect x="222" y="124" width="34" height="28" fill="#e6b972"/><rect x="222" y="124" width="34" height="7" fill="#d9a35b"/>
+  <!-- dodávka -->
+  <rect x="285" y="104" width="150" height="72" rx="8" fill="#1f7a5a"/>
+  <path d="M435 128h28l22 24v24h-50z" fill="#165a43"/>
+  <path d="M443 134h16l14 17h-30z" fill="#cfe9df"/>
+  <rect x="305" y="124" width="100" height="10" rx="5" fill="#fff" opacity=".85"/>
+  <rect x="305" y="142" width="64" height="8" rx="4" fill="#fff" opacity=".55"/>
+  <circle cx="335" cy="180" r="15" fill="#17231f"/><circle cx="335" cy="180" r="6" fill="#9db0a7"/>
+  <circle cx="450" cy="180" r="15" fill="#17231f"/><circle cx="450" cy="180" r="6" fill="#9db0a7"/>
+</svg>
