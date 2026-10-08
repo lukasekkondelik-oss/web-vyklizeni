@@ -1,0 +1,238 @@
+<!doctype html>
+<html lang="cs">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Vyklízení bytů a pozůstalostí | [Název firmy]</title>
+<meta name="description" content="Vyklízení bytů, domů a pozůstalostí včetně odvozu odpadu a úklidu. Bezplatná prohlídka, pevná cena, odhad online za 30 vteřin.">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<div class="topbar">
+  <div class="wrap">
+    <span>Bezplatná prohlídka a cenová nabídka do 24 hodin</span>
+    <a href="tel:+420000000000">☎ +420 000 000 000</a>
+  </div>
+</div>
+
+<header class="site-header">
+  <div class="wrap">
+    <a class="logo" href="#">[Název<span>firmy]</span></a>
+    <nav id="nav">
+      <a href="#sluzby">Služby</a>
+      <a href="#cena">Cena</a>
+      <a href="#postup">Jak to probíhá</a>
+      <a href="#reference">Reference</a>
+      <a href="#faq">Otázky</a>
+    </nav>
+    <a class="btn btn-sm" href="#poptavka">Nezávazná poptávka</a>
+    <button class="burger" aria-label="Menu" onclick="document.getElementById('nav').classList.toggle('open')">☰</button>
+  </div>
+</header>
+
+<main>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="wrap hero-grid">
+    <div>
+      <p class="eyebrow">Praha a okolí · [upravit lokalitu]</p>
+      <h1>Vyklidíme váš byt rychle, čistě a za cenu, která se nezmění.</h1>
+      <p class="lead">Byty, domy, pozůstalosti, sklepy i kanceláře. Postaráme se o všechno od třídění přes odvoz odpadu až po úklid. Vy nemusíte zvednout ani krabici.</p>
+      <div class="cta-row">
+        <a class="btn" href="#cena">Spočítat cenu online</a>
+        <a class="btn btn-ghost" href="tel:+420000000000">Zavolat hned</a>
+      </div>
+      <ul class="ticks">
+        <li>Prohlídka zdarma</li>
+        <li>Pevná cena po prohlídce</li>
+        <li>Byt předáme čistý</li>
+      </ul>
+    </div>
+    <aside class="hero-card" id="poptavka">
+      <h2>Nezávazná poptávka</h2>
+      <p class="muted">Ozveme se do 2 hodin v pracovní dny.</p>
+      <form id="leadForm" novalidate>
+        <label>Jméno
+          <input name="name" required autocomplete="name">
+        </label>
+        <label>Telefon
+          <input name="phone" type="tel" required autocomplete="tel">
+        </label>
+        <label>Co potřebujete vyklidit?
+          <select name="type">
+            <option>Byt</option>
+            <option>Dům</option>
+            <option>Pozůstalost</option>
+            <option>Sklep / půda / garáž</option>
+            <option>Kancelář / firma</option>
+          </select>
+        </label>
+        <label>Město / obec
+          <input name="city" autocomplete="address-level2">
+        </label>
+        <button class="btn btn-block" type="submit">Odeslat poptávku</button>
+        <p class="form-msg" id="formMsg" role="status"></p>
+        <p class="tiny">Odesláním souhlasíte se zpracováním údajů pouze pro účely nabídky.</p>
+      </form>
+    </aside>
+  </div>
+</section>
+
+<!-- DŮVĚRA -->
+<section class="trustbar">
+  <div class="wrap stats">
+    <div><strong>1 200+</strong><span>vyklizených bytů</span></div>
+    <div><strong>2–3 dny</strong><span>typická doba u bytu</span></div>
+    <div><strong>4,9 / 5</strong><span>průměrné hodnocení</span></div>
+    <div><strong>Pojištěno</strong><span>odpovědnost až [X] mil. Kč</span></div>
+  </div>
+  <p class="wrap tiny center">Čísla jsou zástupná. Nahraďte skutečnými, nebo je odstraňte.</p>
+</section>
+
+<!-- SLUŽBY -->
+<section id="sluzby" class="section">
+  <div class="wrap">
+    <h2>Co pro vás vyklidíme</h2>
+    <p class="sub">Ať je to malý sklep, nebo celý rodinný dům.</p>
+    <div class="cards">
+      <article class="card"><div class="ico">🏢</div><h3>Byty</h3><p>Od garsonky po velký byt. Včetně demontáže kuchyňské linky a odvozu podlahových krytin.</p></article>
+      <article class="card"><div class="ico">🏡</div><h3>Domy a chaty</h3><p>Včetně půdy, sklepa, garáže a zahradních přístavků.</p></article>
+      <article class="card"><div class="ico">🕊️</div><h3>Pozůstalosti</h3><p>Citlivě a diskrétně. Pomůžeme roztřídit osobní věci, dokumenty a cennosti. Použitelné věci darujeme.</p></article>
+      <article class="card"><div class="ico">📦</div><h3>Sklepy, půdy, garáže</h3><p>Rychlé jednorázové vyklizení, často i v den objednání.</p></article>
+      <article class="card"><div class="ico">🏢</div><h3>Kanceláře a firmy</h3><p>Mimo provozní dobu, s fakturou a předávacím protokolem.</p></article>
+      <article class="card"><div class="ico">🤝</div><h3>Realitky a správci</h3><p>Opakované zakázky, pevné termíny a fotodokumentace pro vaše klienty.</p></article>
+    </div>
+    <p class="note"><strong>Neodvážíme:</strong> azbest a eternit, nebezpečný odpad (chemikálie, barvy, výbušniny). [Upravit podle oprávnění firmy.]</p>
+  </div>
+</section>
+
+<!-- KALKULAČKA -->
+<section id="cena" class="section alt">
+  <div class="wrap calc-grid">
+    <div>
+      <h2>Kolik vyklízení stojí?</h2>
+      <p class="sub">Zadejte pár údajů a dostanete orientační rozmezí. Pevnou cenu vám potvrdíme po bezplatné prohlídce a už se nezmění.</p>
+      <ul class="ticks">
+        <li>Cena bez skrytých příplatků</li>
+        <li>Odvoz a likvidace odpadu v ceně</li>
+        <li>Posouzení zdarma a bez závazků</li>
+      </ul>
+    </div>
+    <div class="calc" id="calc">
+      <label>Velikost
+        <select id="cSize">
+          <option value="1">Garsonka / 1+kk</option>
+          <option value="2">2+kk / 2+1</option>
+          <option value="3" selected>3+kk / 3+1</option>
+          <option value="4">4+kk / 4+1 a větší</option>
+          <option value="5">Rodinný dům</option>
+        </select>
+      </label>
+      <label>Kolik je v prostoru věcí?
+        <select id="cLoad">
+          <option value="0.8">Málo (téměř prázdné)</option>
+          <option value="1" selected>Běžně zařízeno</option>
+          <option value="1.4">Hodně (plné skříně, sklep)</option>
+          <option value="1.9">Extrémně (sběratelství, hromady)</option>
+        </select>
+      </label>
+      <label>Patro a výtah
+        <select id="cFloor">
+          <option value="0" selected>Přízemí nebo výtah</option>
+          <option value="1">Do 3. patra bez výtahu</option>
+          <option value="2">4. patro a výš bez výtahu</option>
+        </select>
+      </label>
+      <label class="check"><input type="checkbox" id="cCellar"> Vyklidit i sklep / půdu</label>
+      <label class="check"><input type="checkbox" id="cClean"> Přidat závěrečný úklid</label>
+      <div class="result">
+        <span>Orientační cena</span>
+        <strong id="cOut">–</strong>
+        <small>Orientační rozmezí vč. DPH. Konečnou cenu určí prohlídka.</small>
+      </div>
+      <a class="btn btn-block" href="#poptavka">Chci pevnou cenu zdarma</a>
+    </div>
+  </div>
+</section>
+
+<!-- POSTUP -->
+<section id="postup" class="section">
+  <div class="wrap">
+    <h2>Jak to probíhá</h2>
+    <p class="sub">Čtyři kroky, žádné překvapení.</p>
+    <ol class="steps">
+      <li><h3>Zavoláte nebo pošlete poptávku</h3><p>Stačí pár informací a fotky, pokud je máte.</p></li>
+      <li><h3>Prohlídka a pevná cena</h3><p>Přijedeme zdarma, prostor posoudíme a napíšeme cenu, která se nemění.</p></li>
+      <li><h3>Vyklizení</h3><p>Zpravidla 1 až 3 dny. Třídíme, odvezeme, darujeme použitelné věci.</p></li>
+      <li><h3>Úklid a předání</h3><p>Předáme čistý prostor s protokolem a fotodokumentací.</p></li>
+    </ol>
+  </div>
+</section>
+
+<!-- PROČ MY -->
+<section class="section alt">
+  <div class="wrap">
+    <h2>Proč si nás lidé vybírají</h2>
+    <div class="cards cards-2">
+      <article class="card"><h3>Cena, která se nemění</h3><p>Nejčastější stížnost na vyklízecí firmy je vyšší cena než odhad. U nás po prohlídce platí to, co je v nabídce.</p></article>
+      <article class="card"><h3>Klidný a citlivý přístup</h3><p>U pozůstalostí víme, že nejde jen o věci. Nikam nespěcháme a dokumenty i osobní předměty odložíme stranou.</p></article>
+      <article class="card"><h3>Fotodokumentace a protokol</h3><p>Ideální, pokud žijete jinde. Vše uvidíte před, v průběhu i po vyklizení.</p></article>
+      <article class="card"><h3>Ekologicky a s rozumem</h3><p>Odpad třídíme, použitelné věci putují dál (charita, bazar). Vyplatí se to i vám.</p></article>
+    </div>
+  </div>
+</section>
+
+<!-- REFERENCE -->
+<section id="reference" class="section">
+  <div class="wrap">
+    <h2>Co říkají zákazníci</h2>
+    <p class="sub tiny">Zástupné texty. Nahraďte skutečnými recenzemi (Google, Firmy.cz) včetně jména a města.</p>
+    <div class="cards">
+      <blockquote class="card"><p>„Dohodnutá cena platila, termín dodrželi a byt byl vyklizený i uklizený. Žiju v zahraničí, takže fotodokumentace byla zlatá.“</p><footer>Jméno P., Praha · byt 3+1</footer></blockquote>
+      <blockquote class="card"><p>„Po úmrtí maminky jsme nevěděli, kde začít. Postupovali citlivě a odložili nám všechny dokumenty a fotky.“</p><footer>Jméno K., Brno · pozůstalost</footer></blockquote>
+      <blockquote class="card"><p>„Využíváme je pravidelně pro byty našich klientů. Spolehliví, rychlí, vždy s protokolem.“</p><footer>Jméno S., realitní kancelář</footer></blockquote>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section id="faq" class="section alt">
+  <div class="wrap narrow">
+    <h2>Časté otázky</h2>
+    <details><summary>Musím být při vyklízení přítomen?</summary><p>Ne. Stačí předat klíče a domluvit termín. Průběh vám zdokumentujeme fotografiemi.</p></details>
+    <details><summary>Je v ceně odvoz a likvidace odpadu?</summary><p>Ano, v nabídce po prohlídce je odvoz i likvidace. Na co se cena vztahuje, uvedeme písemně.</p></details>
+    <details><summary>Jak rychle můžete přijet?</summary><p>Prohlídku zpravidla do 48 hodin. Menší vyklízení často i do tří dnů od objednání.</p></details>
+    <details><summary>Odkoupíte cenné věci?</summary><p>Ano, nábytek, starožitnosti nebo elektroniku s hodnotou můžeme započítat do ceny. Vždy transparentně a písemně.</p></details>
+    <details><summary>Co když je dědictví ještě nevypořádané?</summary><p>Před vyklizením doporučujeme ověřit stav dědického řízení u notáře, případně vám ověření pomůžeme zorganizovat. Nejde o právní poradenství.</p></details>
+    <details><summary>Jaké věci neodvážíte?</summary><p>Azbest, eternit a nebezpečný odpad. Poradíme, kam s nimi.</p></details>
+  </div>
+</section>
+
+<!-- FINÁLNÍ CTA -->
+<section class="final">
+  <div class="wrap center">
+    <h2>Potřebujete vyklidit? Ozvěte se ještě dnes.</h2>
+    <p>Prohlídka je zdarma a nic vás nezavazuje.</p>
+    <a class="btn btn-light" href="tel:+420000000000">☎ +420 000 000 000</a>
+    <a class="btn btn-ghost-light" href="#poptavka">Napsat poptávku</a>
+  </div>
+</section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="wrap foot-grid">
+    <div><strong>[Název firmy]</strong><br>[Ulice 1, Město]<br>IČO: [00000000]</div>
+    <div>Po–Ne 7:00–20:00<br><a href="mailto:info@example.cz">info@example.cz</a></div>
+    <div>Praha · Středočeský kraj · [další lokality]</div>
+  </div>
+  <p class="wrap tiny center">© <span id="yr"></span> [Název firmy] · Zásady zpracování osobních údajů</p>
+</footer>
+
+<a class="sticky-call" href="tel:+420000000000">☎ Zavolat</a>
+
+<script src="script.js"></script>
+</body>
+</html>
